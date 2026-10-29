@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos Extraordinarios | Galería Interactiva 3D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow-bg"></div>
+
+  <header class="hero">
+    <span class="badge">EXPLORACIÓN GLOBAL</span>
+    <h1 class="hero-title">Destinos Extraordinarios</h1>
+    <p class="hero-desc">Descubre lugares asombrosos con experiencias visuales en perspectiva 3D, elevación dinámica y revelado interactivo.</p>
+    
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="aventura">Aventura</button>
+      <button class="filter-btn" data-filter="naturaleza">Naturaleza</button>
+      <button class="filter-btn" data-filter="cultural">Cultural</button>
+    </div>
+  </header>
+
+  <main class="gallery-container">
+    <div class="cards-grid" id="galleryGrid"></div>
+  </main>
+
+  <!-- Modal Detallado -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card" id="modalCard">
+      <button class="close-btn" id="closeModal">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
